@@ -138,7 +138,7 @@ function drawShadedCartogramsForDoD(){
 
 	var color_d = 
 //d3.scale.linear().domain([DataMin,  DataMax]).range(["#e7e1ef","#dd1c77"])
-d3.scale.linear().domain([DataMin,  DataMax]).range(["#ef8a62","#67a9cf"])
+d3.scale.linear().domain([DataMin,  DataMax]).range(["#fee6ce", "#e6550d"]) ;//.range(["#ef8a62","#67a9cf"])
  //d3.scale.quantile()
  // .domain(data) // pass the whole dataset to a scaleQuantile’s domain
   //.range(['#edf8b1', '#7fcdbb', '#2c7fb8'])
