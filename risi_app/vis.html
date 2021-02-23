@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Visualizations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		
+		<script src="static/assets/lib/d3.js"></script>    
+		<script type="text/javascript" charset="utf-8"  src="static/assets/lib/d3.geo.js"></script>
+		<script type="text/javascript" charset="utf-8"  src="static/assets/lib/d3.geom.js"></script>
+		<script type="text/javascript" charset="utf-8"  src="static/assets/lib/d3.layout.js"></script>
+		<script type="text/javascript" src="static/assets/lib/d3.v3.min.js"></script>
+	
+		<link type="text/css" rel="stylesheet" href="static/assets/css/dorling.css"/>
+
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo"><strong>Visualize</strong> DoD and COVID Data</a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="carto.html">Visualize on Carto Maps</a></li>
+				<li><a href="vis.html">Explore with Other Visualizations</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<section id="main">
+			<div class="inner">
+				<header class="major special">
+					<h1>Explore DoD and COVID Data</h1>
+				</header>
+
+				<header class="major special">
+					<h3>Deaths of Despair over time</h3>
+					<p>Deaths from Drug have increased at higher rate than other DoDs.</p>
+				</header>
+
+				<header class="major special">
+					<pre><b>Changes in number of deaths of despair in US over time.</b></pre>
+				</header>
+
+				<div id="chart0">
+					<script type="text/javascript" src="static/assets/js/time_data_lines.js">
+					</script>
+				</div>
+
+				<br><br><br>
+
+				<header class="major special">
+					<h3>Population and Covid Death Rate</h3>
+					<p>Death rates from Covid and Population in each state. Visualization shows the hardest hit areas from Covid, such as, NY, NJ, MA, CT. </p>
+				</header>
+				<header class="major special">
+					<pre><b>US cartogram - size indicates the population, and color indicates average death rate from covid (per 100000 people)<b></pre>
+				</header>
+				<div id="chart_states">
+					<script type="text/javascript" src="static/assets/js/dorling_state_pop_covid_rate.js">
+					</script>
+				</div>	
+
+				<br><br><br>
+
+				<header class="major special">
+					<h3>Death of Despairs and Population and Death Rate</h3>
+					<p>Deaths of despair varies by counties, but the rate remains relatively same.</p>
+				</header>
+				<header class="major special">
+					<pre><b>US counties cartogram - size indicates the population, and color indicates deaths of despair.</b></pre>
+				</header>
+				<div id="chart_dod">
+					<div id="radio_dod"></div>
+					<div id="chart3">
+						<script type="text/javascript" src="static/assets/js/dorling_risi_county.js">
+						</script>
+					</div>
+				</div>
+
+				<br>
+
+				<header class="major special">
+					<pre><b>cartogram - size indicates deaths of despair rate per 100k population.</b></pre>
+				</header>
+
+				<div id="chart_rate">
+					<div id="radio_rate"></div>
+					<div id="chart4">
+						<script type="text/javascript" src="static/assets/js/dorling_risi_crude_rate.js">
+						</script>
+					</div>
+				</div>
+
+				<br><br><br>
+
+				<header class="major special">
+					<h3>Death Rates for DoD and Covid</h3>
+					<p> Interact with the Scatterplot with see details about counties. The death of despair data is for only deaths due to drugs during 2014-2018.
+						There are a few outliers, but most DoD rates are within 60, whereas most covid deaths rates are within 400 (per 100K). There is no significant correlation. </p>
+				</header>
+
+				<header class="major special">
+					<pre><b>Scatterplot of Death Rate Per 100K from DoD (Drug in 2014-2018) and COVID.</b></pre>
+				</header>
+
+				<div id="chart_scatter">
+					<script type="text/javascript" src="static/assets/js/scatterplot.js">
+					</script>
+				</div>
+
+				<br>
+		</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					* All visualizations are based on data from CORI
+				</div>
+				<div class="copyright">
+					Questions? <address> <a href="mailto:sabrinanusrat@gmail.com">Email Us!</a> </address>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Carto Maps</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo"><strong>Visualize</strong> DoD and COVID Data</a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="carto.html">Visualize on Carto Maps</a></li>
+				<li><a href="vis.html">Explore with Other Visualizations</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<section id="main">
+			<div class="inner">
+				<header class="major special">
+					<h1>Visualize DoD and COVID Data on Carto maps</h1>
+				</header>
+
+				<header class="major special">
+					<h3>Confirmed COVID Cases</h3>
+					<pre><b>Number of confirmed COVID cases across US counties.</b></pre>
+				</header>
+				<div id="map1">
+					<iframe
+						width="100%" height="600" frameborder="0"
+						src="https://carto-user.carto.com/builder/87018d48-e76b-4d98-923a-1d46e20593ab/embed"
+						allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+					</iframe>
+				</div>
+
+				<header class="major special">
+					<h3>Death of Despairs: Count and Rate</h3>
+					<pre><b>Number of DoD deaths and DoD death rates per 100k population across US counties.</b></pre>
+				</header>
+				<div id="map2">
+					<iframe
+						width="100%" height="600" frameborder="0"
+						src="https://carto-user.carto.com/builder/6de56d59-8e57-4e2b-8927-b82849cffea2/embed"
+						allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+					</iframe>
+				</div>
+
+				<header class="major special">
+					<h3>Comparing DoD and COVID Death Rates</h3>
+					<pre><b>Deaths rates due to DoD and COVID per 100k population across US counties.</b></pre>
+				</header>
+				<div id="map3">
+					<iframe
+						width="100%" height="600" frameborder="0"
+						src="https://carto-user.carto.com/builder/deb27a64-1410-4c66-a301-b27b97f45ea1/embed"
+						allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+					</iframe>
+				</div>
+			</div>
+		</section>
+
+		<!-- Scripts -->
+		<script src="static/assets/js/jquery.min.js"></script>
+		<script src="static/assets/js/jquery.scrolly.min.js"></script>
+		<script src="static/assets/js/skel.min.js"></script>
+		<script src="static/assets/js/util.js"></script>
+		<script src="static/assets/js/main.js"></script>
+
+  </body>
+</html>
