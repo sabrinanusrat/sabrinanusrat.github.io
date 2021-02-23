@@ -23,8 +23,7 @@ var project = d3.geo.albersUsa(),
 var cause_rate = "Drug";
 var time_p_rate ="2014-2018";
 
-var fl1 = "/static/assets/data/export_dataframe_all.csv" ;
-var fl1 = "/static/assets/data/export_dataframe_all.csv" ;
+var fl1 = "https://sabrinanusrat.github.io/risi_app/static/assets/data/export_dataframe_all.csv" ;
 d3.csv(fl1, function(states) {
 	allStatesForRate = states;
 	const causes = [...new Set(states.map(st => st.death_cause))].sort();

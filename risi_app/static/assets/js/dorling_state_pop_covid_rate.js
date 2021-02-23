@@ -18,8 +18,8 @@ var PopMean_fr;
 
 var states_fr;
 
-var fl1_fr = "/static/assets/data/USA-Pop2019-input.json" ;//document.getElementById('file1').textContent;
-var fl2_fr = "/static/assets/data/USA-covid-death-rates.json"; //document.getElementById('file2').textContent;
+var fl1_fr = "https://sabrinanusrat.github.io/risi_app/static/assets/data/USA-Pop2019-input.json" ;//document.getElementById('file1').textContent;
+var fl2_fr = "https://sabrinanusrat.github.io/risi_app/static/assets/data/USA-covid-death-rates.json"; //document.getElementById('file2').textContent;
 
 
 var varName1_fr = "Population"; //document.getElementById('var1').textContent;

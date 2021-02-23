@@ -4,7 +4,7 @@ var margin_time = {top: 10, right: 50, bottom: 20, left: 70},
     width_time = 900 -margin_time.left - margin_time.right,
     height_time = 500 - margin_time.top - margin_time.bottom;
 
-var time_d = "/static/assets/data/time_deaths.csv" ;
+var time_d = "https://sabrinanusrat.github.io/risi_app/static/assets/data/time_deaths.csv" ;
 
 var svg0 = d3.select("#chart0")
     .append("svg:svg")

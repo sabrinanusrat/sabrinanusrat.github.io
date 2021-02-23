@@ -5,7 +5,7 @@ var margin_s = //{top: 20, right: 80, bottom: 30, left: 50},
     width_s = 900 - margin_s.left - margin_s.right,
     height_s = 500 - margin_s.top - margin_s.bottom;
 
-var rate_s = "/static/assets/data/death_rates_counties.csv" ;
+var rate_s = "https://sabrinanusrat.github.io/risi_app/static/assets/data/death_rates_counties.csv" ;
 
 //var parseDate = d3.time.format("%Y%m%d").parse;
 
