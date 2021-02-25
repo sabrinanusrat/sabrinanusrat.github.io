@@ -152,65 +152,7 @@ function drawShadedCartogramsForRate() {
 	var dx, dy, l, d;
 
 
-	/*var times = 0;
-	//var factor=0.02;
-	force
-	.nodes(nodes)
-	//.links(links)
-	.start()
-	.on("tick", function(e)
-	{
-		times = times + 1;
-		if(times>10) {
-			return;
-		}
-		var k = e.alpha,
-		kg = k * .02;
-		//kg = k * factor;
-		//var flag = 0;
-
-		nodes.forEach(function(a, i)
-		{
-			//Apply gravity forces.
-			a.x += (a.gravity.x - a.x) * kg;
-			a.y += (a.gravity.y - a.y) * kg;
-			  
-			nodes.slice(i + 1).forEach(function(b, j)
-			{
-				// Check for collisions.
-				b = nodes.slice(i+1)[j];
-
-				dx = a.x - b.x,
-				dy = a.y - b.y,
-				l = Math.sqrt(dx * dx + dy * dy),
-				d = a.r + b.r;
-					
-				if (l < d)
-				{
-					l = (l - d) / l * k;
-					dx *= l;
-					dy *= l;
-			  
-					a.x -= dx;
-					a.y -= dy;
-					b.x += dx;
-					b.y += dy;
-					//flag = 1;
-				}
-				nodes.slice(i+1)[j].x=b.x;
-				nodes.slice(i+1)[j].y=b.y;
-			});
-				
-			nodes[i].x=a.x;
-			nodes[i].y=a.y;
 	
-		});
-		
-});**/
-
-/*svg.selectAll("circle")
-		.attr("cx", function(d) { return d.x; })
-		.attr("cy", function(d) { return d.y; });**/
 
 }
 	
